@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 1.2rem;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+header {
+  width: 100%;
+}
+header .box {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(128, 86, 86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .box h1 {
+  color: white;
+}
+header .box h1::selection {
+  color: darkblue;
+  background-color: cornflowerblue;
+}
+nav {
+  width: 100%;
+  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  color: antiquewhite;
+  display: block;
+  padding: 10px 20px;
+}
+nav ul li a:hover {
+  background-color: blueviolet;
+}
+section {
+  margin-top: 3rem;
+}
+section .ctn_page {
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(129, 129, 129, 0.151);
+}
+section .ctn_page .img_box {
+  width: 100%;
+}
+section .ctn_page .img_box img {
+  border-radius: 5px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/* ----------> Logo <---------- */
+
+.logo {
+  margin-top: 3em;
+  width: 100%;
+}
+.logo .card {
+  margin: 0 auto;
+  width: 80%;
+  height: 400px;
+}
+.logo .card .cover {
+  border-radius: 15%;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-image: url("./icon.png");
+  background-position: center;
+  background-size: 100%;
+  object-fit: cover;
+}
+.logo .card .bio {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.logo .card .bio h2 {
+  color: pink;
+}
+.logo .card .media {
+  margin: 2em auto;
+  width: 300px;
+  height: 300px;
+}
+.logo .card .media ul li {
+  background-color: pink;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.logo .card .media ul li:nth-child(odd) {
+  margin: 1rem 0;
+}
+.logo .card .media ul li a {
+  color: white;
+  font-size: 1.4em;
+}
+.logo .card .media ul li a:hover {
+  color: rgb(93, 204, 255);
+}
+
+/* ----------> RESPORNSIVE <---------- */
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+  header .box {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(128, 86, 86);
+  }
+  header .box h1 {
+    font-size: 1.8em;
+    color: white;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li a {
+    display: block;
+    padding: 8px 15px;
+  }
+  nav ul li a:hover {
+    background-color: blueviolet;
+  }
+
+  nav .media {
+    display: none;
+  }
+  section {
+    margin: 3em auto;
+    width: 95%;
+  }
+  section .ctn_page {
+    padding: 2px;
+    background-color: rgba(129, 129, 129, 0);
+  }
+  /* ----------> Logo <---------- */
+
+  .logo .card {
+    width: 100%;
+    height: 400px;
+  }
+  .logo .card .cover {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.2em;
+  }
+  .logo .card .media {
+    margin: 2em auto;
+    width: 300px;
+  }
+  .logo .card .media ul li {
+    padding: 10px 18px;
+  }
+  .logo .card .media ul li a {
+    font-size: 1.5em;
+  }
+}
